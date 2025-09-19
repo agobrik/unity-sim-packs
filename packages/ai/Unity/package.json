@@ -1,0 +1,18 @@
+{
+  "name": "com.unitysim.ai",
+  "version": "1.0.0",
+  "displayName": "Unity Sim Ai",
+  "description": "Ai simulation system for Unity",
+  "unity": "2020.3",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "keywords": [
+    "simulation",
+    "ai",
+    "unity"
+  ],
+  "author": {
+    "name": "Unity Simulation Packages"
+  }
+}

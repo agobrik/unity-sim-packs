@@ -1,0 +1,22 @@
+{
+  "name": "com.unitysim.core",
+  "version": "1.0.0",
+  "displayName": "Unity Simulation Core",
+  "description": "Core simulation systems for Unity - 30 packages",
+  "unity": "2020.3",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Weather System Demo",
+      "description": "Example weather simulation scene",
+      "path": "Samples~/WeatherDemo"
+    },
+    {
+      "displayName": "Economy System Demo",
+      "description": "Example economy simulation scene",
+      "path": "Samples~/EconomyDemo"
+    }
+  ]
+}
