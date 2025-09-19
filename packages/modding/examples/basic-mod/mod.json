@@ -1,0 +1,71 @@
+{
+  "id": "basic-example-mod",
+  "name": "Basic Example Mod",
+  "version": "1.0.0",
+  "description": "A simple example mod demonstrating basic functionality",
+  "author": "Steam Simulation Toolkit",
+  "homepage": "https://github.com/steam-sim/toolkit",
+  "license": "MIT",
+  "tags": ["example", "basic", "tutorial"],
+  "category": "content",
+  "compatibility": {
+    "gameVersion": "^1.0.0",
+    "frameworkVersion": "^1.0.0"
+  },
+  "dependencies": [],
+  "entryPoint": "index.js",
+  "assets": [
+    {
+      "path": "config.json",
+      "type": "config",
+      "preload": true
+    }
+  ],
+  "permissions": [
+    {
+      "type": "file_read",
+      "scope": "assets",
+      "description": "Read mod configuration and assets",
+      "required": true
+    }
+  ],
+  "configuration": {
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "title": "Enable Mod",
+        "description": "Whether this mod is enabled",
+        "default": true
+      },
+      "message": {
+        "type": "string",
+        "title": "Welcome Message",
+        "description": "Message to display when mod loads",
+        "default": "Hello from Basic Example Mod!"
+      },
+      "interval": {
+        "type": "number",
+        "title": "Update Interval",
+        "description": "How often to update (in seconds)",
+        "default": 5,
+        "minimum": 1,
+        "maximum": 60
+      }
+    },
+    "required": ["enabled"],
+    "groups": [
+      {
+        "name": "general",
+        "title": "General Settings",
+        "properties": ["enabled", "message"],
+        "description": "Basic mod settings"
+      },
+      {
+        "name": "advanced",
+        "title": "Advanced Settings",
+        "properties": ["interval"],
+        "description": "Advanced configuration options"
+      }
+    ]
+  }
+}

@@ -1,0 +1,489 @@
+{
+    "FileVersion": 3,
+    "Version": 1,
+    "VersionName": "1.0.0",
+    "FriendlyName": "SteamProject Data Visualization",
+    "Description": "Real-time data visualization plugin for Unreal Engine game development. Provides charts, dashboards, and analytics visualization with JavaScript integration via V8 engine.",
+    "Category": "Game Development Tools",
+    "CreatedBy": "SteamProject Team",
+    "CreatedByURL": "https://steamproject.com",
+    "DocsURL": "https://docs.steamproject.com/data-visualization",
+    "MarketplaceURL": "",
+    "SupportURL": "https://github.com/steamproject/data-visualization/issues",
+    "EngineVersion": "5.0.0",
+    "CanContainContent": true,
+    "IsBetaVersion": false,
+    "IsExperimentalVersion": false,
+    "Installed": false,
+    "RequiresBuildPlatform": false,
+
+    "Modules": [
+        {
+            "Name": "DataVisualization",
+            "Type": "Runtime",
+            "LoadingPhase": "PostConfigInit",
+            "AdditionalDependencies": [
+                "Engine",
+                "CoreUObject",
+                "Core"
+            ]
+        },
+        {
+            "Name": "DataVisualizationEditor",
+            "Type": "Editor",
+            "LoadingPhase": "PostEngineInit",
+            "AdditionalDependencies": [
+                "DataVisualization",
+                "UnrealEd",
+                "ToolMenus",
+                "EditorStyle",
+                "EditorWidgets",
+                "Slate",
+                "SlateCore"
+            ]
+        }
+    ],
+
+    "Plugins": [
+        {
+            "Name": "V8JavaScript",
+            "Enabled": true,
+            "Optional": false,
+            "Description": "Required for JavaScript engine integration"
+        },
+        {
+            "Name": "HTTP",
+            "Enabled": true,
+            "Optional": false,
+            "Description": "Required for web data streaming"
+        },
+        {
+            "Name": "Json",
+            "Enabled": true,
+            "Optional": false,
+            "Description": "Required for JSON data processing"
+        }
+    ],
+
+    "LocalizationTargets": [
+        {
+            "Name": "DataVisualization",
+            "LoadingPolicy": "Always"
+        }
+    ],
+
+    "EnabledByDefault": false,
+    "ExplicitlyLoaded": false,
+    "HasExplicitPlatforms": false,
+    "SupportedTargetPlatforms": [
+        "Win64",
+        "Mac",
+        "Linux",
+        "iOS",
+        "Android"
+    ],
+
+    "SupportedPrograms": [
+        "UnrealBuildTool",
+        "UnrealHeaderTool"
+    ],
+
+    "PreBuildSteps": {
+        "Win64": [
+            "npm install --prefix $(ProjectDir)/Content/JavaScript @steamproject/data-visualization"
+        ],
+        "Mac": [
+            "npm install --prefix $(ProjectDir)/Content/JavaScript @steamproject/data-visualization"
+        ],
+        "Linux": [
+            "npm install --prefix $(ProjectDir)/Content/JavaScript @steamproject/data-visualization"
+        ]
+    },
+
+    "PostBuildSteps": {
+        "Win64": [],
+        "Mac": [],
+        "Linux": []
+    },
+
+    "InstallationInstructions": {
+        "Steps": [
+            "1. Ensure Node.js is installed on your system",
+            "2. Install V8JavaScript plugin from Epic Games Marketplace",
+            "3. Enable V8JavaScript plugin in Project Settings > Plugins",
+            "4. Copy DataVisualization plugin to your project's Plugins folder",
+            "5. Enable DataVisualization plugin in Project Settings > Plugins",
+            "6. Run 'npm install @steamproject/data-visualization' in Content/JavaScript/",
+            "7. Restart Unreal Editor",
+            "8. Add DataVisualizationBridge component to your actors",
+            "9. Initialize and start creating charts!"
+        ],
+        "Requirements": [
+            "Unreal Engine 5.0 or later",
+            "V8JavaScript plugin",
+            "Node.js 16.0 or later",
+            "C++ development environment",
+            "Minimum 4GB RAM (8GB recommended)",
+            "DirectX 11 or OpenGL 4.3 compatible graphics card"
+        ]
+    },
+
+    "Features": {
+        "Core": {
+            "Charts": [
+                "Line Charts - Real-time performance monitoring",
+                "Bar Charts - Player statistics and leaderboards",
+                "Pie Charts - Resource distribution visualization",
+                "Heatmaps - Activity zones and performance hotspots",
+                "Gauges - Health, mana, and progress indicators",
+                "Scatter Plots - Data correlation analysis"
+            ],
+            "Dashboards": [
+                "Multi-chart layouts",
+                "Responsive grid system",
+                "Real-time data updates",
+                "Custom widget support",
+                "Theme integration"
+            ],
+            "DataProcessing": [
+                "Real-time data streaming",
+                "Batch update optimization",
+                "Memory management",
+                "Data aggregation",
+                "Export functionality"
+            ]
+        },
+        "Integration": {
+            "UnrealEngine": [
+                "Blueprint integration",
+                "C++ API",
+                "Event system",
+                "Performance monitoring",
+                "Memory optimization"
+            ],
+            "JavaScript": [
+                "V8 engine integration",
+                "NPM package support",
+                "Async processing",
+                "Error handling",
+                "Debug mode"
+            ],
+            "Platforms": [
+                "Windows (DirectX/OpenGL)",
+                "macOS (Metal/OpenGL)",
+                "Linux (OpenGL/Vulkan)",
+                "iOS (Metal)",
+                "Android (OpenGL ES)"
+            ]
+        },
+        "GameDevelopment": {
+            "PerformanceMonitoring": [
+                "FPS tracking",
+                "Memory usage",
+                "CPU utilization",
+                "Render statistics",
+                "Custom metrics"
+            ],
+            "PlayerAnalytics": [
+                "Health/mana visualization",
+                "Skill progression",
+                "Inventory management",
+                "Achievement tracking",
+                "Session analytics"
+            ],
+            "GameEconomy": [
+                "Resource distribution",
+                "Market price tracking",
+                "Transaction history",
+                "Supply chain visualization",
+                "Economic indicators"
+            ]
+        }
+    },
+
+    "Performance": {
+        "Recommendations": {
+            "TargetFramerate": "60 FPS with active charts",
+            "MemoryOverhead": "50-100MB for chart data",
+            "UpdateFrequency": "100ms intervals for real-time charts",
+            "MaxDataPoints": "1000 points per chart for optimal performance",
+            "ConcurrentCharts": "Maximum 10 charts for best performance"
+        },
+        "Optimizations": [
+            "Batch chart updates to reduce JavaScript overhead",
+            "Automatic memory cleanup and garbage collection",
+            "Object pooling for frequent data updates",
+            "Level-of-detail for distant or minimized charts",
+            "Platform-specific optimizations (mobile, console, PC)"
+        ],
+        "Benchmarks": {
+            "Desktop": {
+                "MinimumFPS": "30 FPS with 5 active charts",
+                "RecommendedFPS": "60 FPS with 3 active charts",
+                "OptimalFPS": "120 FPS with 1-2 active charts"
+            },
+            "Mobile": {
+                "MinimumFPS": "30 FPS with 2 active charts",
+                "RecommendedFPS": "60 FPS with 1 active chart",
+                "OptimalFPS": "60 FPS with simplified charts"
+            },
+            "Console": {
+                "MinimumFPS": "30 FPS with 8 active charts",
+                "RecommendedFPS": "60 FPS with 5 active charts",
+                "OptimalFPS": "120 FPS with 3 active charts"
+            }
+        }
+    },
+
+    "Configuration": {
+        "DefaultSettings": {
+            "MemoryLimit": "52428800",
+            "BatchInterval": "0.1",
+            "MaxDataPointsPerChart": "1000",
+            "EnableDebugMode": "false",
+            "EnableAutoCleanup": "true",
+            "EnableBatchUpdates": "true",
+            "DefaultTheme": "dark-game-ui"
+        },
+        "PlatformOverrides": {
+            "Mobile": {
+                "MemoryLimit": "26214400",
+                "MaxDataPointsPerChart": "500",
+                "BatchInterval": "0.2"
+            },
+            "Console": {
+                "MemoryLimit": "104857600",
+                "MaxDataPointsPerChart": "2000",
+                "BatchInterval": "0.05"
+            }
+        }
+    },
+
+    "Themes": {
+        "BuiltIn": [
+            {
+                "Name": "Dark Game UI",
+                "ID": "dark-game-ui",
+                "Description": "Dark theme optimized for game interfaces",
+                "Colors": {
+                    "Primary": "#ff6b6b",
+                    "Secondary": "#4ecdc4",
+                    "Background": "#1a1a2e",
+                    "Text": "#eee"
+                }
+            },
+            {
+                "Name": "Sci-Fi",
+                "ID": "sci-fi",
+                "Description": "Futuristic sci-fi game theme",
+                "Colors": {
+                    "Primary": "#00ffff",
+                    "Secondary": "#0080ff",
+                    "Background": "#0a0a0a",
+                    "Text": "#ffffff"
+                }
+            },
+            {
+                "Name": "Fantasy",
+                "ID": "fantasy",
+                "Description": "Medieval/fantasy game theme",
+                "Colors": {
+                    "Primary": "#d4af37",
+                    "Secondary": "#8b4513",
+                    "Background": "#2f1b14",
+                    "Text": "#f5deb3"
+                }
+            },
+            {
+                "Name": "Neon Cyberpunk",
+                "ID": "neon",
+                "Description": "Cyberpunk neon theme",
+                "Colors": {
+                    "Primary": "#ff0080",
+                    "Secondary": "#00ff80",
+                    "Background": "#0d0d0d",
+                    "Text": "#ffffff"
+                }
+            }
+        ],
+        "CustomThemeSupport": true,
+        "ThemeInheritance": true,
+        "RuntimeThemeSwitching": true
+    },
+
+    "Examples": {
+        "IncludedScenes": [
+            {
+                "Name": "Performance Monitoring",
+                "File": "Examples/PerformanceMonitoring.umap",
+                "Description": "Real-time FPS, memory, and CPU monitoring with threshold alerts"
+            },
+            {
+                "Name": "Player Statistics",
+                "File": "Examples/PlayerStatistics.umap",
+                "Description": "Player health, mana, skills, and inventory visualization"
+            },
+            {
+                "Name": "Game Analytics",
+                "File": "Examples/GameAnalytics.umap",
+                "Description": "Leaderboards, activity heatmaps, and session analytics"
+            },
+            {
+                "Name": "Economy Visualization",
+                "File": "Examples/EconomyVisualization.umap",
+                "Description": "Resource distribution, market prices, and transaction tracking"
+            },
+            {
+                "Name": "Complete Integration",
+                "File": "Examples/CompleteIntegration.umap",
+                "Description": "Full integration example with all visualization features"
+            }
+        ],
+        "CodeExamples": [
+            {
+                "Name": "DataVisualizationBridge",
+                "File": "Source/DataVisualization/Public/DataVisualizationBridge.h",
+                "Description": "Main bridge component for Unreal to JavaScript integration"
+            },
+            {
+                "Name": "DataVisualizationExample",
+                "File": "Source/DataVisualization/Public/DataVisualizationExample.h",
+                "Description": "Comprehensive example with all visualization features"
+            },
+            {
+                "Name": "PerformanceMonitor",
+                "File": "Source/DataVisualization/Public/PerformanceMonitor.h",
+                "Description": "Component for tracking game performance metrics"
+            },
+            {
+                "Name": "ChartThemeManager",
+                "File": "Source/DataVisualization/Public/ChartThemeManager.h",
+                "Description": "Utility for managing and applying chart themes"
+            }
+        ],
+        "Blueprints": [
+            {
+                "Name": "BP_DataVisualizationManager",
+                "Description": "Blueprint actor with pre-configured visualization setup"
+            },
+            {
+                "Name": "BP_PerformanceMonitor",
+                "Description": "Blueprint component for performance monitoring"
+            },
+            {
+                "Name": "BP_PlayerStatsDisplay",
+                "Description": "Blueprint for displaying player statistics"
+            }
+        ]
+    },
+
+    "Documentation": {
+        "QuickStart": "README.md",
+        "APIReference": "Documentation/API.md",
+        "Examples": "Documentation/Examples.md",
+        "Troubleshooting": "Documentation/Troubleshooting.md",
+        "Performance": "Documentation/Performance.md",
+        "Tutorials": [
+            "Documentation/Tutorials/GettingStarted.md",
+            "Documentation/Tutorials/CreatingCharts.md",
+            "Documentation/Tutorials/PerformanceMonitoring.md",
+            "Documentation/Tutorials/CustomThemes.md",
+            "Documentation/Tutorials/BlueprintIntegration.md"
+        ]
+    },
+
+    "BuildConfiguration": {
+        "RequiredModules": [
+            "Core",
+            "CoreUObject",
+            "Engine",
+            "UnrealEd",
+            "Slate",
+            "SlateCore",
+            "EditorStyle",
+            "EditorWidgets",
+            "ToolMenus",
+            "HTTP",
+            "Json",
+            "V8"
+        ],
+        "PrivateDependencyModuleNames": [
+            "RenderCore",
+            "RHI",
+            "ApplicationCore",
+            "InputCore",
+            "Projects"
+        ],
+        "PreprocessorDefinitions": [
+            "STEAMPROJECT_DATAVIZ_ENABLED=1",
+            "WITH_V8_INTEGRATION=1"
+        ],
+        "PCHUsage": "UseExplicitOrSharedPCHs",
+        "bLegacyPublicIncludePaths": false,
+        "OptimizeCode": "InShippingBuildsOnly",
+        "bUsePrecompiled": true
+    },
+
+    "Packaging": {
+        "AdditionalNonAssetDirectoriesToCopy": [
+            "Content/JavaScript"
+        ],
+        "AdditionalNonAssetDirectoriesToPackage": [
+            "Content/JavaScript/node_modules/@steamproject/data-visualization"
+        ],
+        "BlacklistPlatforms": [],
+        "WhitelistPlatforms": [
+            "Win64",
+            "Mac",
+            "Linux",
+            "iOS",
+            "Android"
+        ]
+    },
+
+    "Testing": {
+        "UnitTests": [
+            "Source/DataVisualization/Tests/DataVisualizationBridgeTest.cpp",
+            "Source/DataVisualization/Tests/ChartCreationTest.cpp",
+            "Source/DataVisualization/Tests/PerformanceTest.cpp"
+        ],
+        "IntegrationTests": [
+            "Source/DataVisualization/Tests/JavaScriptIntegrationTest.cpp",
+            "Source/DataVisualization/Tests/ThemeApplicationTest.cpp"
+        ],
+        "AutomationTests": [
+            "Source/DataVisualization/Tests/Automation/ChartAutomationTest.cpp"
+        ]
+    },
+
+    "Changelog": {
+        "1.0.0": {
+            "Date": "2024-01-15",
+            "Changes": [
+                "Initial release",
+                "Core chart types (Line, Bar, Pie, Heatmap, Gauge)",
+                "V8 JavaScript engine integration",
+                "Real-time data updates",
+                "Blueprint integration",
+                "Performance monitoring",
+                "Custom theme support",
+                "Cross-platform support"
+            ]
+        }
+    },
+
+    "License": {
+        "Type": "MIT",
+        "File": "LICENSE.txt",
+        "Copyright": "Copyright (c) 2024 SteamProject Team",
+        "URL": "https://github.com/steamproject/data-visualization/blob/main/LICENSE"
+    },
+
+    "Support": {
+        "Email": "support@steamproject.com",
+        "Discord": "https://discord.gg/steamproject",
+        "GitHub": "https://github.com/steamproject/data-visualization",
+        "Documentation": "https://docs.steamproject.com/data-visualization",
+        "Marketplace": "https://www.unrealengine.com/marketplace/steamproject-data-visualization"
+    }
+}

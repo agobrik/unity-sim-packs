@@ -1,0 +1,40 @@
+{
+  "name": "unity-sim-packs",
+  "version": "1.0.0",
+  "description": "30 Unity-Compatible Simulation Packages for Game Development",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node perfect-unity-test.cjs",
+    "test:unity": "node perfect-unity-test.cjs",
+    "build:all": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces",
+    "install:all": "npm install --workspaces"
+  },
+  "keywords": ["unity", "simulation", "gaming", "packages", "typescript", "json-export", "game-development"],
+  "author": "Unity Simulation Packages",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agobrik/unity-sim-packs.git"
+  },
+  "homepage": "https://github.com/agobrik/unity-sim-packs#readme",
+  "bugs": {
+    "url": "https://github.com/agobrik/unity-sim-packs/issues"
+  },
+  "dependencies": {
+    "three": "^0.158.0",
+    "cannon-es": "^0.20.0",
+    "dat.gui": "^0.7.9",
+    "lodash": "^4.17.21",
+    "eventemitter3": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/three": "^0.158.0",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "rollup": "^4.0.0",
+    "typescript": "^5.2.0"
+  }
+}

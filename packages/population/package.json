@@ -1,0 +1,17 @@
+{
+  "name": "@steam-sim/population",
+  "version": "1.0.0",
+  "description": "Population simulation with demographics, migration, and social dynamics",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": ["simulation", "population", "demographics", "migration", "steam"],
+  "author": "Steam Simulation Toolkit",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

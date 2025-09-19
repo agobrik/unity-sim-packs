@@ -1,0 +1,17 @@
+{
+  "name": "@steam-sim/mining-geology",
+  "version": "1.0.0",
+  "description": "Mining and geological simulation with resource extraction and surveys",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": ["simulation", "mining", "geology", "resources", "steam"],
+  "author": "Steam Simulation Toolkit",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

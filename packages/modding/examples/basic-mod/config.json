@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "defaults": {
+    "enabled": true,
+    "message": "Hello from Basic Example Mod!",
+    "interval": 5
+  },
+  "metadata": {
+    "name": "Basic Example Configuration",
+    "description": "Default configuration for the basic example mod"
+  }
+}

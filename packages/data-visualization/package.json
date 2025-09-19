@@ -1,0 +1,40 @@
+{
+  "name": "@steam-sim/data-visualization",
+  "version": "1.0.0",
+  "description": "Advanced real-time data visualization system for Steam Simulation Toolkit",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "steam",
+    "simulation",
+    "data-visualization",
+    "charts",
+    "graphs",
+    "dashboard",
+    "real-time",
+    "analytics",
+    "unity",
+    "unreal",
+    "godot"
+  ],
+  "author": "Steam Simulation Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.19.17",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.51.0",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.2.0"
+  }
+}
