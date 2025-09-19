@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.data-visualization",
+  "displayName": "Unity Sim - Data Visualization",
+  "version": "1.0.0",
+  "description": "Real-time data visualization system with charts, graphs, heatmaps, and interactive analytics displays.",
+  "unity": "2020.3",
+  "keywords": [
+    "visualization",
+    "charts",
+    "graphs",
+    "analytics",
+    "data",
+    "simulation",
+    "unity"
+  ],
+  "category": "Visualization",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - Data Visualization Example",
+      "description": "Example implementation of Unity Sim - Data Visualization",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.time",
+  "displayName": "Unity Sim - Time System",
+  "version": "1.0.0",
+  "description": "Advanced time management with time scaling, scheduling, calendar systems, and temporal mechanics.",
+  "unity": "2020.3",
+  "keywords": [
+    "time",
+    "scheduling",
+    "calendar",
+    "temporal",
+    "scaling",
+    "simulation",
+    "unity"
+  ],
+  "category": "Framework",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - Time System Example",
+      "description": "Example implementation of Unity Sim - Time System",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}

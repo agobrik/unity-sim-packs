@@ -1,0 +1,16 @@
+{
+  "name": "UnitySim.Ai",
+  "displayName": "Unity Sim - AI System",
+  "references": [
+    "Unity.Newtonsoft.Json"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

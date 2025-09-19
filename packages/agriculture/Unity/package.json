@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.agriculture",
+  "displayName": "Unity Sim - Agriculture System",
+  "version": "1.0.0",
+  "description": "Agricultural simulation with crop management, livestock, seasonal cycles, and farming economics.",
+  "unity": "2020.3",
+  "keywords": [
+    "agriculture",
+    "farming",
+    "crops",
+    "livestock",
+    "seasons",
+    "simulation",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - Agriculture System Example",
+      "description": "Example implementation of Unity Sim - Agriculture System",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}

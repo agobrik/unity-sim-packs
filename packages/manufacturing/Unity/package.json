@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.manufacturing",
+  "displayName": "Unity Sim - Manufacturing System",
+  "version": "1.0.0",
+  "description": "Industrial manufacturing simulation with production lines, quality control, and efficiency optimization.",
+  "unity": "2020.3",
+  "keywords": [
+    "manufacturing",
+    "production",
+    "industry",
+    "quality",
+    "optimization",
+    "simulation",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - Manufacturing System Example",
+      "description": "Example implementation of Unity Sim - Manufacturing System",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}

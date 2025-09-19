@@ -1,18 +1,34 @@
 {
-  "name": "com.unitysim.physics",
+  "name": "com.unity-sim.physics",
+  "displayName": "Unity Sim - Physics System",
   "version": "1.0.0",
-  "displayName": "Unity Sim Physics",
-  "description": "Physics simulation system for Unity",
+  "description": "Enhanced physics simulation system with rigidbody tracking, collision detection, and physics performance monitoring.",
   "unity": "2020.3",
+  "keywords": [
+    "physics",
+    "simulation",
+    "rigidbody",
+    "collision",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "physics",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - Physics System Example",
+      "description": "Example implementation of Unity Sim - Physics System",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

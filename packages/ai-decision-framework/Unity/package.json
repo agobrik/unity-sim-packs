@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.ai-decision-framework",
+  "displayName": "Unity Sim - AI Decision Framework",
+  "version": "1.0.0",
+  "description": "Advanced AI decision-making framework with machine learning integration and behavioral modeling.",
+  "unity": "2020.3",
+  "keywords": [
+    "ai",
+    "decision",
+    "framework",
+    "machine-learning",
+    "behavior",
+    "simulation",
+    "unity"
+  ],
+  "category": "AI & Machine Learning",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - AI Decision Framework Example",
+      "description": "Example implementation of Unity Sim - AI Decision Framework",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}

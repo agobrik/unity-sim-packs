@@ -1,18 +1,36 @@
 {
-  "name": "com.unitysim.urbanplanning",
+  "name": "com.unity-sim.urban-planning",
+  "displayName": "Unity Sim - Urban Planning",
   "version": "1.0.0",
-  "displayName": "Unity Sim UrbanPlanning",
-  "description": "UrbanPlanning simulation system for Unity",
+  "description": "City planning and urban development simulation with infrastructure, zoning, and population dynamics.",
   "unity": "2020.3",
+  "keywords": [
+    "urban",
+    "planning",
+    "city",
+    "infrastructure",
+    "zoning",
+    "simulation",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "urban-planning",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - Urban Planning Example",
+      "description": "Example implementation of Unity Sim - Urban Planning",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

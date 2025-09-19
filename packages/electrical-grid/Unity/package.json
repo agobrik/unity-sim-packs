@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.electrical-grid",
+  "displayName": "Unity Sim - Electrical Grid",
+  "version": "1.0.0",
+  "description": "Power grid simulation with electricity distribution, load balancing, renewable energy, and grid stability.",
+  "unity": "2020.3",
+  "keywords": [
+    "electrical",
+    "grid",
+    "power",
+    "energy",
+    "renewable",
+    "simulation",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - Electrical Grid Example",
+      "description": "Example implementation of Unity Sim - Electrical Grid",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}

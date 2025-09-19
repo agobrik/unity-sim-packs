@@ -1,0 +1,16 @@
+{
+  "name": "UnitySim.Realworlddataadapters",
+  "displayName": "Unity Sim - Real World Data Adapters",
+  "references": [
+    "Unity.Newtonsoft.Json"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

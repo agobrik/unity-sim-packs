@@ -1,5 +1,5 @@
 {
-  "name": "UnitySim.Ai",
+  "name": "UnitySim.AI",
   "references": [
     "Unity.Nuget.Newtonsoft-Json"
   ],

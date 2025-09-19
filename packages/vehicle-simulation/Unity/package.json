@@ -1,18 +1,36 @@
 {
-  "name": "com.unitysim.vehiclesimulation",
+  "name": "com.unity-sim.vehicle-simulation",
+  "displayName": "Unity Sim - Vehicle Simulation",
   "version": "1.0.0",
-  "displayName": "Unity Sim VehicleSimulation",
-  "description": "VehicleSimulation simulation system for Unity",
+  "description": "Realistic vehicle physics and traffic simulation with autonomous driving and transportation systems.",
   "unity": "2020.3",
+  "keywords": [
+    "vehicle",
+    "traffic",
+    "transportation",
+    "autonomous",
+    "driving",
+    "simulation",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "vehicle-simulation",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - Vehicle Simulation Example",
+      "description": "Example implementation of Unity Sim - Vehicle Simulation",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

@@ -1,18 +1,35 @@
 {
-  "name": "com.unitysim.analytics",
+  "name": "com.unity-sim.analytics",
+  "displayName": "Unity Sim - Analytics System",
   "version": "1.0.0",
-  "displayName": "Unity Sim Analytics",
-  "description": "Analytics simulation system for Unity",
+  "description": "Comprehensive analytics and data collection system for tracking simulation metrics and performance data.",
   "unity": "2020.3",
+  "keywords": [
+    "analytics",
+    "data",
+    "metrics",
+    "tracking",
+    "simulation",
+    "unity"
+  ],
+  "category": "Analytics",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "analytics",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - Analytics System Example",
+      "description": "Example implementation of Unity Sim - Analytics System",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

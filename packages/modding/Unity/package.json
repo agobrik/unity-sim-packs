@@ -1,18 +1,35 @@
 {
-  "name": "com.unitysim.modding",
+  "name": "com.unity-sim.modding",
+  "displayName": "Unity Sim - Modding System",
   "version": "1.0.0",
-  "displayName": "Unity Sim Modding",
-  "description": "Modding simulation system for Unity",
+  "description": "Flexible modding framework enabling runtime modifications, script loading, and community content integration.",
   "unity": "2020.3",
+  "keywords": [
+    "modding",
+    "framework",
+    "runtime",
+    "scripting",
+    "community",
+    "unity"
+  ],
+  "category": "Framework",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "modding",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - Modding System Example",
+      "description": "Example implementation of Unity Sim - Modding System",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

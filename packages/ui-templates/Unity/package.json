@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.ui-templates",
+  "displayName": "Unity Sim - UI Templates",
+  "version": "1.0.0",
+  "description": "Pre-built UI templates and components for simulation interfaces, dashboards, and control panels.",
+  "unity": "2020.3",
+  "keywords": [
+    "ui",
+    "templates",
+    "interface",
+    "dashboard",
+    "controls",
+    "simulation",
+    "unity"
+  ],
+  "category": "UI",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - UI Templates Example",
+      "description": "Example implementation of Unity Sim - UI Templates",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}

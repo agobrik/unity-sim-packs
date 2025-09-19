@@ -1,18 +1,35 @@
 {
-  "name": "com.unitysim.economy",
+  "name": "com.unity-sim.economy",
+  "displayName": "Unity Sim - Economy System",
   "version": "1.0.0",
-  "displayName": "Unity Sim Economy",
-  "description": "Economy simulation system for Unity",
+  "description": "Comprehensive economic simulation system with market dynamics, GDP tracking, inflation modeling, and economic indicators.",
   "unity": "2020.3",
+  "keywords": [
+    "economy",
+    "simulation",
+    "market",
+    "gdp",
+    "finance",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "economy",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - Economy System Example",
+      "description": "Example implementation of Unity Sim - Economy System",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

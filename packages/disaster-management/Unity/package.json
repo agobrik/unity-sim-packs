@@ -1,18 +1,35 @@
 {
-  "name": "com.unitysim.disastermanagement",
+  "name": "com.unity-sim.disaster-management",
+  "displayName": "Unity Sim - Disaster Management",
   "version": "1.0.0",
-  "displayName": "Unity Sim DisasterManagement",
-  "description": "DisasterManagement simulation system for Unity",
+  "description": "Natural disaster simulation and emergency response system with crisis management and resource allocation.",
   "unity": "2020.3",
+  "keywords": [
+    "disaster",
+    "emergency",
+    "crisis",
+    "management",
+    "simulation",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "disaster-management",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - Disaster Management Example",
+      "description": "Example implementation of Unity Sim - Disaster Management",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

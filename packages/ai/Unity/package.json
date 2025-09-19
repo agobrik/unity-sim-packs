@@ -1,18 +1,35 @@
 {
-  "name": "com.unitysim.ai",
+  "name": "com.unity-sim.ai",
+  "displayName": "Unity Sim - AI System",
   "version": "1.0.0",
-  "displayName": "Unity Sim Ai",
-  "description": "Ai simulation system for Unity",
+  "description": "Intelligent agent simulation system with behavior trees, decision making, and AI performance analytics.",
   "unity": "2020.3",
+  "keywords": [
+    "ai",
+    "simulation",
+    "agents",
+    "behavior",
+    "intelligence",
+    "unity"
+  ],
+  "category": "AI & Machine Learning",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "ai",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - AI System Example",
+      "description": "Example implementation of Unity Sim - AI System",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

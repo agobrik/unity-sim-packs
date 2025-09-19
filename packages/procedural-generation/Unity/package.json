@@ -1,18 +1,35 @@
 {
-  "name": "com.unitysim.proceduralgeneration",
+  "name": "com.unity-sim.procedural-generation",
+  "displayName": "Unity Sim - Procedural Generation",
   "version": "1.0.0",
-  "displayName": "Unity Sim ProceduralGeneration",
-  "description": "ProceduralGeneration simulation system for Unity",
+  "description": "Advanced procedural generation system for creating dynamic worlds, terrains, and environmental content.",
   "unity": "2020.3",
+  "keywords": [
+    "procedural",
+    "generation",
+    "terrain",
+    "world",
+    "dynamic",
+    "unity"
+  ],
+  "category": "Procedural Generation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   },
-  "keywords": [
-    "simulation",
-    "procedural-generation",
-    "unity"
+  "samples": [
+    {
+      "displayName": "Unity Sim - Procedural Generation Example",
+      "description": "Example implementation of Unity Sim - Procedural Generation",
+      "path": "Examples~"
+    }
   ],
-  "author": {
-    "name": "Unity Simulation Packages"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
 }

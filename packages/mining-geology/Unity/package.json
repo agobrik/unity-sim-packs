@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.mining-geology",
+  "displayName": "Unity Sim - Mining & Geology",
+  "version": "1.0.0",
+  "description": "Mining and geological simulation with resource extraction, geological modeling, and environmental impact.",
+  "unity": "2020.3",
+  "keywords": [
+    "mining",
+    "geology",
+    "resources",
+    "extraction",
+    "geological",
+    "simulation",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - Mining & Geology Example",
+      "description": "Example implementation of Unity Sim - Mining & Geology",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}

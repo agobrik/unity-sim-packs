@@ -1,0 +1,36 @@
+{
+  "name": "com.unity-sim.advanced-economics",
+  "displayName": "Unity Sim - Advanced Economics",
+  "version": "1.0.0",
+  "description": "Sophisticated economic modeling with complex market mechanisms, trade systems, and financial instruments.",
+  "unity": "2020.3",
+  "keywords": [
+    "economics",
+    "markets",
+    "trade",
+    "finance",
+    "modeling",
+    "simulation",
+    "unity"
+  ],
+  "category": "Simulation",
+  "author": {
+    "name": "Unity Simulation Framework",
+    "email": "contact@unity-sim.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Sim - Advanced Economics Example",
+      "description": "Example implementation of Unity Sim - Advanced Economics",
+      "path": "Examples~"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unity-sim/unity-sim-packs.git"
+  },
+  "license": "MIT"
+}
